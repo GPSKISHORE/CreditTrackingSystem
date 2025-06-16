@@ -1,0 +1,128 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+    border-bottom: 2px solid #f1c40f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #f1c40f;
+    font-size: 28px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom right, #1e1e1e, #2c2c2c);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #f1c40f;
+    color: #000;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+}
+
+.features {
+    padding: 40px 20px;
+    background-color: #181818;
+    text-align: center;
+}
+
+.features h3 {
+    color: #f1c40f;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.1);
+}
+
+.feature h4 {
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
