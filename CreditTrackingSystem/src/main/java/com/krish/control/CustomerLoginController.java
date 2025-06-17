@@ -18,7 +18,7 @@ public class CustomerLoginController {
 	@GetMapping("/CustLogin")
 	public String CustloginPage(@ModelAttribute CustLoginModel clm) {
 		System.out.println("CustomerLoginController.CustloginPage()");
-		System.out.println("CustomerLoginController.CustloginPage() + 1");
+		System.out.println("CustomerLoginController.CustloginPage() +  1");
 		return "Clogin";
 	}
 
