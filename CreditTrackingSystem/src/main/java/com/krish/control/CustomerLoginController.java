@@ -17,6 +17,7 @@ public class CustomerLoginController {
 	}
 	@GetMapping("/CustLogin")
 	public String CustloginPage(@ModelAttribute CustLoginModel clm) {
+		System.out.println("CustomerLoginController.CustloginPage()");
 		return "Clogin";
 	}
 
